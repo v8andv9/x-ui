@@ -106,7 +106,6 @@ install_x-ui() {
     systemctl stop x-ui
     cd /usr/local/
 
-        fi
         echo -e "检测到 x-ui 最新版本：${last_version}，开始安装"
         wget -N --no-check-certificate -O /usr/local/x-ui-linux-${arch}.tar.gz https://github.com/vaxilu/v8andv9/releases/download/${last_version}/x-ui-linux-${arch}.tar.gz
         if [[ $? -ne 0 ]]; then
